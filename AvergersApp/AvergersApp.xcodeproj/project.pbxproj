@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		D53C89A5245B6797000A31AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A4245B6797000A31AD /* AppDelegate.swift */; };
 		D53C89A7245B6797000A31AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A6245B6797000A31AD /* SceneDelegate.swift */; };
-		D53C89A9245B6797000A31AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A8245B6797000A31AD /* ViewController.swift */; };
+		D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A8245B6797000A31AD /* AvengersViewController.swift */; };
 		D53C89AC245B6797000A31AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C89AA245B6797000A31AD /* Main.storyboard */; };
 		D53C89AF245B6797000A31AD /* AvergersApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D53C89AD245B6797000A31AD /* AvergersApp.xcdatamodeld */; };
 		D53C89B1245B679E000A31AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53C89B0245B679E000A31AD /* Assets.xcassets */; };
 		D53C89B4245B679E000A31AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C89B2245B679E000A31AD /* LaunchScreen.storyboard */; };
+		D53C89C6245C6C30000A31AD /* VillainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89C5245C6C30000A31AD /* VillainViewController.swift */; };
+		D53C89C8245C6C43000A31AD /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89C7245C6C43000A31AD /* BattleViewController.swift */; };
+		D53C89CB245C6E43000A31AD /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89C9245C6E43000A31AD /* CharacterTableViewCell.swift */; };
+		D53C89CC245C6E43000A31AD /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53C89CA245C6E43000A31AD /* CharacterTableViewCell.xib */; };
+		D5C7916C245C9A0E00C3ED6B /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */; };
+		D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */; };
+		D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7916F245C9B4D00C3ED6B /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D53C89A1245B6797000A31AD /* AvergersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvergersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53C89A4245B6797000A31AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53C89A6245B6797000A31AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D53C89A8245B6797000A31AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D53C89A8245B6797000A31AD /* AvengersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersViewController.swift; sourceTree = "<group>"; };
 		D53C89AB245B6797000A31AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53C89AE245B6797000A31AD /* AvergersApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AvergersApp.xcdatamodel; sourceTree = "<group>"; };
 		D53C89B0245B679E000A31AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53C89B3245B679E000A31AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53C89B5245B679E000A31AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53C89C5245C6C30000A31AD /* VillainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainViewController.swift; sourceTree = "<group>"; };
+		D53C89C7245C6C43000A31AD /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		D53C89C9245C6E43000A31AD /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		D53C89CA245C6E43000A31AD /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
+		D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		D5C7916F245C9B4D00C3ED6B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D53C89AD245B6797000A31AD /* AvergersApp.xcdatamodeld */,
+				D5C7916F245C9B4D00C3ED6B /* Character.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +134,7 @@
 		D53C89C1245B6962000A31AD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D53C89CD245C8954000A31AD /* Storyboard */,
 				D53C89C4245B6977000A31AD /* Controllers */,
 				D53C89C3245B696F000A31AD /* Cells */,
 				D53C89C2245B6969000A31AD /* Views */,
@@ -131,6 +147,8 @@
 			children = (
 				D53C89B2245B679E000A31AD /* LaunchScreen.storyboard */,
 				D53C89AA245B6797000A31AD /* Main.storyboard */,
+				D53C89CA245C6E43000A31AD /* CharacterTableViewCell.xib */,
+				D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +156,7 @@
 		D53C89C3245B696F000A31AD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D53C89C9245C6E43000A31AD /* CharacterTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -145,9 +164,19 @@
 		D53C89C4245B6977000A31AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D53C89A8245B6797000A31AD /* ViewController.swift */,
+				D53C89A8245B6797000A31AD /* AvengersViewController.swift */,
+				D53C89C5245C6C30000A31AD /* VillainViewController.swift */,
+				D53C89C7245C6C43000A31AD /* BattleViewController.swift */,
+				D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D53C89CD245C8954000A31AD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +240,8 @@
 				D53C89B4245B679E000A31AD /* LaunchScreen.storyboard in Resources */,
 				D53C89B1245B679E000A31AD /* Assets.xcassets in Resources */,
 				D53C89AC245B6797000A31AD /* Main.storyboard in Resources */,
+				D53C89CC245C6E43000A31AD /* CharacterTableViewCell.xib in Resources */,
+				D5C7916C245C9A0E00C3ED6B /* CharacterDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53C89C8245C6C43000A31AD /* BattleViewController.swift in Sources */,
+				D53C89CB245C6E43000A31AD /* CharacterTableViewCell.swift in Sources */,
 				D53C89AF245B6797000A31AD /* AvergersApp.xcdatamodeld in Sources */,
-				D53C89A9245B6797000A31AD /* ViewController.swift in Sources */,
+				D53C89C6245C6C30000A31AD /* VillainViewController.swift in Sources */,
+				D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */,
+				D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */,
+				D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */,
 				D53C89A5245B6797000A31AD /* AppDelegate.swift in Sources */,
 				D53C89A7245B6797000A31AD /* SceneDelegate.swift in Sources */,
 			);
