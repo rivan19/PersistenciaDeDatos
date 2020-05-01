@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Avengers" representedClassName="Avengers" syncable="YES" codeGenerationType="class">
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="power" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Battle" representedClassName="Battle" syncable="YES" codeGenerationType="class">
+        <attribute name="win" optional="YES" attributeType="String"/>
+        <relationship name="avenger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avengers"/>
+        <relationship name="villain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Villain"/>
+    </entity>
+    <entity name="Villain" representedClassName="Villain" syncable="YES" codeGenerationType="class">
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="power" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Avengers" positionX="-1.57421875" positionY="-382.8671875" width="128" height="103"/>
+        <element name="Villain" positionX="350.5078125" positionY="-372.1640625" width="128" height="103"/>
+        <element name="Battle" positionX="184.96875" positionY="-212.29296875" width="128" height="88"/>
+    </elements>
+</model>
