@@ -94,12 +94,25 @@
                     <view key="view" contentMode="scaleToFill" id="eGI-xZ-zpT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-Ie-d5U">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.2992617639495424" green="0.87731452545796684" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6AL-Ie-d5U" firstAttribute="leading" secondItem="ILl-7P-GQh" secondAttribute="leading" id="Ddr-Q1-acj"/>
+                            <constraint firstItem="ILl-7P-GQh" firstAttribute="trailing" secondItem="6AL-Ie-d5U" secondAttribute="trailing" id="Ovi-Jy-n79"/>
+                            <constraint firstItem="ILl-7P-GQh" firstAttribute="bottom" secondItem="6AL-Ie-d5U" secondAttribute="bottom" id="QqW-C2-0LE"/>
+                            <constraint firstItem="6AL-Ie-d5U" firstAttribute="top" secondItem="ILl-7P-GQh" secondAttribute="top" id="ZtA-2a-a6Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ILl-7P-GQh"/>
                     </view>
                     <navigationItem key="navigationItem" id="b87-4T-5VF"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
+                        <outlet property="tableView" destination="6AL-Ie-d5U" id="j3s-2B-djT"/>
                         <segue destination="fbm-CP-DGG" kind="show" identifier="SEGUE_VILLAIN_DETAIL" id="OdP-KF-NEg"/>
                     </connections>
                 </viewController>
@@ -147,7 +160,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Bto-PZ-aqY"/>
+        <segue reference="OdP-KF-NEg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ic_tab_battles" width="17" height="17"/>

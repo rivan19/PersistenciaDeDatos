@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7DDDD3245D8E7200EA288C /* CharacterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7DDDD2245D8E7200EA288C /* CharacterDetailTableViewCell.swift */; };
+		4A7DDDD7245D92C200EA288C /* CharacterDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7DDDD6245D92C200EA288C /* CharacterDetailCollectionViewCell.swift */; };
+		4A7DDDDA245D939E00EA288C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7DDDD9245D939E00EA288C /* Utilities.swift */; };
 		D53C89A5245B6797000A31AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A4245B6797000A31AD /* AppDelegate.swift */; };
 		D53C89A7245B6797000A31AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A6245B6797000A31AD /* SceneDelegate.swift */; };
 		D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C89A8245B6797000A31AD /* AvengersViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A7DDDD2245D8E7200EA288C /* CharacterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableViewCell.swift; sourceTree = "<group>"; };
+		4A7DDDD6245D92C200EA288C /* CharacterDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A7DDDD9245D939E00EA288C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D53C89A1245B6797000A31AD /* AvergersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvergersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53C89A4245B6797000A31AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53C89A6245B6797000A31AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A7DDDD8245D938C00EA288C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A7DDDD9245D939E00EA288C /* Utilities.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D53C8998245B6796000A31AD = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +86,7 @@
 		D53C89A3245B6797000A31AD /* AvergersApp */ = {
 			isa = PBXGroup;
 			children = (
+				4A7DDDD8245D938C00EA288C /* Utils */,
 				D53C89BB245B691D000A31AD /* App */,
 				D53C89BC245B6928000A31AD /* Resource */,
 				D53C89BD245B6937000A31AD /* Data */,
@@ -102,16 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				D53C89BF245B6949000A31AD /* Local */,
-				D53C89BE245B6940000A31AD /* Enum */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		D53C89BE245B6940000A31AD /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enum;
 			sourceTree = "<group>";
 		};
 		D53C89BF245B6949000A31AD /* Local */ = {
@@ -145,10 +152,7 @@
 		D53C89C2245B6969000A31AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D53C89B2245B679E000A31AD /* LaunchScreen.storyboard */,
-				D53C89AA245B6797000A31AD /* Main.storyboard */,
 				D53C89CA245C6E43000A31AD /* CharacterTableViewCell.xib */,
-				D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				D53C89C9245C6E43000A31AD /* CharacterTableViewCell.swift */,
+				4A7DDDD2245D8E7200EA288C /* CharacterDetailTableViewCell.swift */,
+				4A7DDDD6245D92C200EA288C /* CharacterDetailCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -175,6 +181,9 @@
 		D53C89CD245C8954000A31AD /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D53C89B2245B679E000A31AD /* LaunchScreen.storyboard */,
+				D53C89AA245B6797000A31AD /* Main.storyboard */,
+				D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -255,7 +264,10 @@
 				D53C89C8245C6C43000A31AD /* BattleViewController.swift in Sources */,
 				D53C89CB245C6E43000A31AD /* CharacterTableViewCell.swift in Sources */,
 				D53C89AF245B6797000A31AD /* AvergersApp.xcdatamodeld in Sources */,
+				4A7DDDDA245D939E00EA288C /* Utilities.swift in Sources */,
 				D53C89C6245C6C30000A31AD /* VillainViewController.swift in Sources */,
+				4A7DDDD7245D92C200EA288C /* CharacterDetailCollectionViewCell.swift in Sources */,
+				4A7DDDD3245D8E7200EA288C /* CharacterDetailTableViewCell.swift in Sources */,
 				D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */,
 				D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */,
 				D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */,

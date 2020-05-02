@@ -7,6 +7,7 @@
         <attribute name="power" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Battle" representedClassName="Battle" syncable="YES" codeGenerationType="class">
+        <attribute name="idBatalla" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="win" optional="YES" attributeType="String"/>
         <relationship name="avenger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avengers"/>
         <relationship name="villain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Villain"/>
@@ -19,7 +20,7 @@
     </entity>
     <elements>
         <element name="Avengers" positionX="-1.57421875" positionY="-382.8671875" width="128" height="103"/>
-        <element name="Battle" positionX="184.96875" positionY="-212.29296875" width="128" height="88"/>
+        <element name="Battle" positionX="184.96875" positionY="-212.29296875" width="128" height="103"/>
         <element name="Villain" positionX="350.5078125" positionY="-372.1640625" width="128" height="103"/>
     </elements>
 </model>

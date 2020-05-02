@@ -11,13 +11,13 @@ import UIKit
 class AvengersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let segue_Avenger = "SEGUE_HEROES_DETAIL"
-    let avengers : [Character] = [Character.init(name: "Capitana Marvel", image: "img_heroe_marvel_captain", descripcion: "Descripcion Capitana Marvel", power: 5),
-                                  Character.init(name: "Capitan America", image: "img_heroe_america_captain", descripcion: "Descripcion: Capitan America", power: 4),
-                                  Character.init(name: "Black Panther", image: "img_heroe_black_panther", descripcion: "Descripcion_ Black Panther", power: 3),
-                                  Character.init(name: "Viuda Negra", image: "img_heroe_black_widow", descripcion: "Descripcion: Viuda Negra", power: 2),
-                                  Character.init(name: "Doctor Extraño", image: "img_heroe_dr_strange", descripcion: "Descripcion: Doctor Extraño", power: 4),
-                                  Character.init(name: "Gamora", image: "img_heroe_gamora", descripcion: "Descripcion: Gamora", power: 3)]
+    
+    let avengers : [Character] = [Character.init(name: "Capitana Marvel", image: "img_heroe_marvel_captain", descripcion: "Descripcion Capitana Marvel", power: 5, kind: KindSuperHeroe.avenger.rawValue),
+                                  Character.init(name: "Capitan America", image: "img_heroe_america_captain", descripcion: "Descripcion: Capitan America", power: 4, kind: KindSuperHeroe.avenger.rawValue),
+                                  Character.init(name: "Black Panther", image: "img_heroe_black_panther", descripcion: "Descripcion_ Black Panther", power: 3, kind: KindSuperHeroe.avenger.rawValue),
+                                  Character.init(name: "Viuda Negra", image: "img_heroe_black_widow", descripcion: "Descripcion: Viuda Negra", power: 2, kind: KindSuperHeroe.avenger.rawValue),
+                                  Character.init(name: "Doctor Extraño", image: "img_heroe_dr_strange", descripcion: "Descripcion: Doctor Extraño", power: 4, kind: KindSuperHeroe.avenger.rawValue),
+                                  Character.init(name: "Gamora", image: "img_heroe_gamora", descripcion: "Descripcion: Gamora", power: 3, kind: KindSuperHeroe.avenger.rawValue)]
     
     private var avengerSelected : Character? = nil
     
@@ -50,8 +50,6 @@ class AvengersViewController: UIViewController {
         vc.navigationItem.title = avenger.name
         
         vc.setCharacter(character: avenger)
-        
-        
         
     }
     
@@ -90,7 +88,7 @@ extension AvengersViewController: UITableViewDelegate, UITableViewDataSource {
                 return
             }
             
-            self.performSegue(withIdentifier: self.segue_Avenger, sender: nil)
+            self.performSegue(withIdentifier: Utilities.shared.segue_Avenger, sender: nil)
         }
         
         return cell

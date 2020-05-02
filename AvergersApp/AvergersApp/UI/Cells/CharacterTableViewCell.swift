@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol SelectedCharacterDelegate : class {
-    func selectedCharacter(character: Character)
-}
+
 
 class CharacterTableViewCell: UITableViewCell {
 
@@ -34,11 +32,8 @@ class CharacterTableViewCell: UITableViewCell {
     func setupUI(){
         characterImage.image = UIImage.init(named: _character?.image ?? "")
         characterName.text = _character?.name
-        if let power = _character?.power {
-            characterImagePower.image = UIImage.init(named: "ic_stars_\(power)")
-        } else {
-            characterImagePower.image = UIImage.init(named: "ic_stars_0")
-        }
+        
+        characterImagePower.image = UIImage(named: Utilities.shared.getImageSuperPower(power: _character?.power ?? 0))
         
     }
     
