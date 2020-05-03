@@ -29,7 +29,7 @@ class DataProvider {
     }
     
     func createBattle() -> Battles? {
-        return database?.createDataVillains() as? Battles
+        return database?.createDataBattles() as? Battles
     }
     
     func save() {

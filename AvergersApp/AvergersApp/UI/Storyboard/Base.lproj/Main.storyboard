@@ -18,7 +18,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="n7W-UJ-Sm4" kind="relationship" relationship="viewControllers" id="RfD-sA-AIb"/>
-                        <segue destination="gSM-7H-hTp" kind="relationship" relationship="viewControllers" id="lUa-hZ-uy8"/>
+                        <segue destination="4md-U9-bwm" kind="relationship" relationship="viewControllers" id="lUa-hZ-uy8"/>
                         <segue destination="VwJ-zN-hON" kind="relationship" relationship="viewControllers" id="pTO-35-a1e"/>
                     </connections>
                 </tabBarController>
@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vsT-at-4av">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vsT-at-4av">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -52,7 +52,6 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="tableView" destination="vsT-at-4av" id="IBu-TZ-xtc"/>
-                        <outlet property="view" destination="vsT-at-4av" id="zSH-gs-r6u"/>
                         <segue destination="fbm-CP-DGG" kind="show" identifier="SEGUE_HEROES_DETAIL" id="Bto-PZ-aqY"/>
                     </connections>
                 </viewController>
@@ -68,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2AL-ju-dM3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2AL-ju-dM3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.075805313885211945" green="0.81287401914596558" blue="0.51373517513275146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -142,6 +141,7 @@
                                                 <constraint firstItem="HhY-BW-GmM" firstAttribute="top" secondItem="htQ-Vl-BkL" secondAttribute="bottom" constant="42" id="kxt-wW-BDv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.77194681779999996" blue="0.51273045939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="BattleAvengerImage" destination="eN4-nR-7B3" id="yFZ-Vs-bJy"/>
                                             <outlet property="BattleLabel" destination="htQ-Vl-BkL" id="cwd-yt-m98"/>
@@ -178,12 +178,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z1F-i3-IsD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Battles" image="ic_tab_battles" id="guT-Vk-Pmy"/>
+                    <navigationItem key="navigationItem" id="LyZ-lC-pMl"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="tableView" destination="2AL-ju-dM3" id="Gtq-Jx-tZg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWe-we-Z9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395.6521739130435" y="-261.16071428571428"/>
+            <point key="canvasLocation" x="1305.7971014492755" y="-261.16071428571428"/>
         </scene>
         <!--BattleScreen-->
         <scene sceneID="CSr-ea-90u">
@@ -193,7 +196,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yI6-bu-mbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="-307"/>
+            <point key="canvasLocation" x="2005.072463768116" y="-307.36607142857139"/>
         </scene>
         <!--CharacterDetail-->
         <scene sceneID="p2n-jP-Ed5">
@@ -203,7 +206,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLW-WN-zuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="-356"/>
+            <point key="canvasLocation" x="2734.7826086956525" y="-356.25"/>
         </scene>
         <!--Villains-->
         <scene sceneID="rhn-Zc-mZu">
@@ -213,7 +216,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-Ie-d5U">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-Ie-d5U">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -275,6 +278,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pva-zF-MYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395.6521739130435" y="431.91964285714283"/>
+        </scene>
+        <!--Battles-->
+        <scene sceneID="PbX-C7-fh4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4md-U9-bwm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Battles" image="ic_tab_battles" id="guT-Vk-Pmy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YYU-yj-TQo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gSM-7H-hTp" kind="relationship" relationship="rootViewController" id="QeR-Za-roD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVs-xg-D5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="-261.16071428571428"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

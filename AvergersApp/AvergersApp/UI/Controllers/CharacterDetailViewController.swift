@@ -53,8 +53,6 @@ class CharacterDetailViewController: UIViewController {
         vc.setCharacter(character: character)
         
     }
-    
-
 }
 
 extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSource {

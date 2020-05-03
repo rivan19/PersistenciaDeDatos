@@ -24,7 +24,7 @@ class BattleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        setupUI()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,6 +56,7 @@ class BattleTableViewCell: UITableViewCell {
     
     func setBattle(battles: Battles){
         _battles = battles
+        setupUI()
     }
 
 }

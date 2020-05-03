@@ -32,6 +32,10 @@
 		D5C79177245E08AD00C3ED6B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79176245E08AD00C3ED6B /* Database.swift */; };
 		D5C79179245E0E5900C3ED6B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79178245E0E5900C3ED6B /* DataProvider.swift */; };
 		D5C7917F245E3F9600C3ED6B /* EditPowerCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */; };
+		D5C79181245EF53000C3ED6B /* BattleAvengerSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79180245EF53000C3ED6B /* BattleAvengerSelectTableViewCell.swift */; };
+		D5C79183245EF65C00C3ED6B /* BattleAvengerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79182245EF65C00C3ED6B /* BattleAvengerSelectViewController.swift */; };
+		D5C79185245F167900C3ED6B /* BattleVillainSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79184245F167900C3ED6B /* BattleVillainSelectViewController.swift */; };
+		D5C79187245F174300C3ED6B /* BattleVillainSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79186245F174300C3ED6B /* BattleVillainSelectTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		D5C79176245E08AD00C3ED6B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		D5C79178245E0E5900C3ED6B /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPowerCharacterViewController.swift; sourceTree = "<group>"; };
+		D5C79180245EF53000C3ED6B /* BattleAvengerSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAvengerSelectTableViewCell.swift; sourceTree = "<group>"; };
+		D5C79182245EF65C00C3ED6B /* BattleAvengerSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAvengerSelectViewController.swift; sourceTree = "<group>"; };
+		D5C79184245F167900C3ED6B /* BattleVillainSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVillainSelectViewController.swift; sourceTree = "<group>"; };
+		D5C79186245F174300C3ED6B /* BattleVillainSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVillainSelectTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,8 @@
 				4A7DDDD2245D8E7200EA288C /* CharacterDetailTableViewCell.swift */,
 				4A7DDDD6245D92C200EA288C /* CharacterDetailCollectionViewCell.swift */,
 				4A7DDDDB245EC9C900EA288C /* BattleTableViewCell.swift */,
+				D5C79180245EF53000C3ED6B /* BattleAvengerSelectTableViewCell.swift */,
+				D5C79186245F174300C3ED6B /* BattleVillainSelectTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -196,6 +206,8 @@
 				D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */,
 				D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */,
 				4A7DDDDF245ED6F800EA288C /* BattleAddViewController.swift */,
+				D5C79182245EF65C00C3ED6B /* BattleAvengerSelectViewController.swift */,
+				D5C79184245F167900C3ED6B /* BattleVillainSelectViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,14 +312,18 @@
 				D53C89C8245C6C43000A31AD /* BattleViewController.swift in Sources */,
 				D53C89CB245C6E43000A31AD /* CharacterTableViewCell.swift in Sources */,
 				4A7DDDDC245EC9C900EA288C /* BattleTableViewCell.swift in Sources */,
+				D5C79187245F174300C3ED6B /* BattleVillainSelectTableViewCell.swift in Sources */,
 				D53C89AF245B6797000A31AD /* AvergersApp.xcdatamodeld in Sources */,
 				4A7DDDDA245D939E00EA288C /* Utilities.swift in Sources */,
+				D5C79183245EF65C00C3ED6B /* BattleAvengerSelectViewController.swift in Sources */,
 				D53C89C6245C6C30000A31AD /* VillainViewController.swift in Sources */,
 				4A7DDDE0245ED6F800EA288C /* BattleAddViewController.swift in Sources */,
 				4A7DDDD7245D92C200EA288C /* CharacterDetailCollectionViewCell.swift in Sources */,
 				4A7DDDD3245D8E7200EA288C /* CharacterDetailTableViewCell.swift in Sources */,
 				D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */,
+				D5C79185245F167900C3ED6B /* BattleVillainSelectViewController.swift in Sources */,
 				D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */,
+				D5C79181245EF53000C3ED6B /* BattleAvengerSelectTableViewCell.swift in Sources */,
 				D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */,
 				D5C79179245E0E5900C3ED6B /* DataProvider.swift in Sources */,
 				D53C89A5245B6797000A31AD /* AppDelegate.swift in Sources */,

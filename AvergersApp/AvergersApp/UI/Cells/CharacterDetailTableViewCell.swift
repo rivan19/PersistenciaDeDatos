@@ -15,6 +15,7 @@ class CharacterDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var viewCollectionBattles: UICollectionView!
     
     private var _character: Character?
+    private var battlesFilter: [Battles]?
     
     static let cellIdentifier: String = String(describing: CharacterDetailTableViewCell.self)
     
@@ -44,6 +45,38 @@ class CharacterDetailTableViewCell: UITableViewCell {
     
     func setCharacterer(character: Character) -> Void {
         _character = character
+        let battles = Utilities.shared.getBattles()
+        
+        battlesFilter = battles.filter
+        { [weak self] (battle) in
+            
+            if self?._character?.kind == KindSuperHeroe.avenger.rawValue {
+                guard let avenger = battle.avenger else {
+                    return false
+                }
+                
+                if Int(avenger.id) == self?._character?.id {
+                    return true
+                }
+                return false
+            }
+            else
+            {
+                guard let villain = battle.villain else {
+                    return false
+                }
+                
+                if Int(villain.id) == self?._character?.id {
+                    return true
+                }
+                
+                return false
+            }
+            
+            
+            
+        }
+    
         
         setupUI()
     }
@@ -62,7 +95,7 @@ extension CharacterDetailTableViewCell: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return battlesFilter?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -71,7 +104,19 @@ extension CharacterDetailTableViewCell: UICollectionViewDelegate, UICollectionVi
         }
         
         cell.setupUI()
-        cell.battlesLabel.text = "Batalla \(indexPath.row)"
+        
+        let battleStates = battlesFilter?[indexPath.row]
+        
+        cell.battlesLabel.text = "Batalla \(battleStates?.id ?? 0)"
+        
+        if self._character?.kind == battleStates?.win {
+            cell.viewCollection.backgroundColor = .blue
+        }
+        else {
+            cell.viewCollection.backgroundColor = .red
+        }
+        
+        
         return cell
     }
     

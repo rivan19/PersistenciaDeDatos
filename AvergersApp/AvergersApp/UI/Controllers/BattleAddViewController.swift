@@ -17,11 +17,12 @@ class BattleAddViewController: UIViewController {
     @IBOutlet weak var addBattleAvenger: UIButton!
     @IBOutlet weak var addBattleVillain: UIButton!
     
-    private let dataProvider = DataProvider()
+    private var selectedAvenger: Avengers?
+    private var selectedVillain: Villains?
     
-    lazy var availableAvengers: [Avengers] = {
-        return Utilities.shared.getAvengers()
-    }()
+    let dataProvider = DataProvider()
+    
+    var delegate: BattleDelegate?
     
     lazy var villain: [Villains] = {
         return Utilities.shared.getVillains()
@@ -49,20 +50,73 @@ class BattleAddViewController: UIViewController {
     }
     
     @IBAction func addBattleFightButton(_ sender: Any) {
+        
+        guard let selectedAvenger = self.selectedAvenger else {
+            return
+        }
+        
+        guard let selectedVillain = self.selectedVillain else {
+            return
+        }
+        
+        let randomAvenger = Double.random(in: 1.0...5.0)
+        let randomVillain = Double.random(in: 1.0...5.0)
+        
+        let avangerResult = Double(selectedAvenger.power) * randomAvenger
+        let villainResult = Double(selectedVillain.power) * randomVillain
+        
+        let winBattle = avangerResult >= villainResult ? KindSuperHeroe.avenger.rawValue : KindSuperHeroe.villain.rawValue
+        
+        let battle = dataProvider.createBattle()
+        
+        battle?.setValue(battles.count + 1, forKey: "id")
+        battle?.setValue(winBattle, forKey: "win")
+        battle?.setValue(selectedAvenger, forKey: "avenger")
+        battle?.setValue(selectedVillain, forKey: "villain")
+        
+        dataProvider.save()
+        delegate?.finishBattle()
+        
+        navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func addBattleCloseWindowButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if let vcAvenger = segue.destination as? BattleAvengerSelectViewController
+        {
+            vcAvenger.delegate = self
+        }
+        
+        if let vcVillain = segue.destination as? BattleVillainSelectViewController{
+            vcVillain.delegate = self
+        }
     }
-    */
+    
 
+}
+
+extension BattleAddViewController: SelectedAvengerDelegate {
+    func selectedAvenger(avenger: Avengers) {
+        self.selectedAvenger = avenger
+        
+        addBattleAvenger.isHidden = true
+        self.addBattleAvengerImage.image = UIImage(named: avenger.image ?? "")
+        self.addBattleAvengerImage.alpha = CGFloat(1.0)
+    }
+}
+
+extension BattleAddViewController: SelectedVillainDelegate {
+    func selectedVillain(villain: Villains) {
+        self.selectedVillain = villain
+        
+        addBattleVillain.isHidden = true
+        self.addBattleVillainImage.image = UIImage(named: villain.image ?? "")
+        self.addBattleVillainImage.alpha = CGFloat(1.0)
+    }
 }

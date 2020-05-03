@@ -22,6 +22,26 @@ protocol EditCharacterDelegate: class {
     func onCharacterSaved()
 }
 
+protocol SelectedAvengerBattleDelegate: class {
+    func selectedAvengerBattle(avenger: Avengers)
+}
+
+protocol SelectedVillainBattleDelegate: class {
+    func selectedVillainBattle(villain: Villains)
+}
+
+protocol SelectedAvengerDelegate: class {
+    func selectedAvenger(avenger: Avengers)
+}
+
+protocol SelectedVillainDelegate: class {
+    func selectedVillain(villain: Villains)
+}
+
+protocol BattleDelegate: class {
+    func finishBattle()
+}
+
 //MARK: Enums
 enum KindSuperHeroe : String {
     case avenger = "A"
@@ -42,6 +62,8 @@ class Utilities {
     let segue_Villain = "SEGUE_VILLAIN_DETAIL"
     let segue_edit_Power = "SEGUE_EDIT_POWER"
     let segue_detail_battle = "SEGUE_SHOW_DETAIL_BATTLE"
+    let segue_select_avenger_battle = "SEGUE_SELECT_AVENGER_BATTLE"
+    let segue_select_villain_battle = "SEGUE_SELECT_VILLAIN_BATTLE"
     
     let key_user_default = "keyUserDefaultPersistence"
     let key_last_view = "keyUserDefaultView"

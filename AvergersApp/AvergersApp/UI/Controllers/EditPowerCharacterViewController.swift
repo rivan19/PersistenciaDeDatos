@@ -69,7 +69,7 @@ class EditPowerCharacterViewController: UIViewController {
             }
         }
         
-        if power + 1 < Utilities.shared.maxPower {
+        if power + 1 <= Utilities.shared.maxPower {
             for index in power + 1...Utilities.shared.maxPower {
                 switch index {
                 case 1:
