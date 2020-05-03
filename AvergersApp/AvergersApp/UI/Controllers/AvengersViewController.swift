@@ -12,13 +12,7 @@ class AvengersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let avengers : [Character] = [Character.init(name: "Capitana Marvel", image: "img_heroe_marvel_captain", descripcion: "Descripcion Capitana Marvel", power: 5, kind: KindSuperHeroe.avenger.rawValue),
-                                  Character.init(name: "Capitan America", image: "img_heroe_america_captain", descripcion: "Descripcion: Capitan America", power: 4, kind: KindSuperHeroe.avenger.rawValue),
-                                  Character.init(name: "Black Panther", image: "img_heroe_black_panther", descripcion: "Descripcion_ Black Panther", power: 3, kind: KindSuperHeroe.avenger.rawValue),
-                                  Character.init(name: "Viuda Negra", image: "img_heroe_black_widow", descripcion: "Descripcion: Viuda Negra", power: 2, kind: KindSuperHeroe.avenger.rawValue),
-                                  Character.init(name: "Doctor Extraño", image: "img_heroe_dr_strange", descripcion: "Descripcion: Doctor Extraño", power: 4, kind: KindSuperHeroe.avenger.rawValue),
-                                  Character.init(name: "Gamora", image: "img_heroe_gamora", descripcion: "Descripcion: Gamora", power: 3, kind: KindSuperHeroe.avenger.rawValue)]
-    
+    var avengers = Utilities.shared.getDataAvengers()
     private var avengerSelected : Character? = nil
     
     //private var _character : Character
@@ -48,7 +42,7 @@ class AvengersViewController: UIViewController {
         
         vc.title = avenger.name
         vc.navigationItem.title = avenger.name
-        
+        vc.delegate = self
         vc.setCharacter(character: avenger)
         
     }
@@ -80,8 +74,16 @@ extension AvengersViewController: UITableViewDelegate, UITableViewDataSource {
         }
     // Get tasks for current task state selected
         
+        let superHeroe = avengers[indexPath.row]
         
-        cell.setCharacter(avengers[indexPath.row])
+        let character: Character = Character(id: Int(superHeroe.id),
+                                  name: superHeroe.name ?? "",
+                                  image: superHeroe.image,
+                                  descripcion: superHeroe.descripcion,
+                                  power: Int(superHeroe.power),
+                                  kind: "A")
+        
+        cell.setCharacter(character)
         cell.delegate = self
         cell.selectCell = { [weak self] () -> Void in
             guard let self = self else {
@@ -103,6 +105,13 @@ extension AvengersViewController: UITableViewDelegate, UITableViewDataSource {
 extension AvengersViewController: SelectedCharacterDelegate {
     func selectedCharacter(character: Character) {
         self.avengerSelected = character
+    }
+}
+
+extension AvengersViewController: EditCharacterDelegate {
+    func onCharacterSaved(){        
+        avengers = Utilities.shared.getDataAvengers()
+        tableView.reloadData()
     }
 }
 

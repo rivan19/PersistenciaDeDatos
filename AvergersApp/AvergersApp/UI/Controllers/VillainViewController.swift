@@ -12,13 +12,8 @@ class VillainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let villains : [Character] = [Character.init(name: "Yon Rogg", image: "img_heroe_yon_rogg", descripcion: "Descripcion Yon Rogg", power: 5, kind: KindSuperHeroe.villain.rawValue),
-    Character.init(name: "Dormammu", image: "img_villain_dormammu", descripcion: "Descripcion: Dormammu", power: 4, kind: KindSuperHeroe.villain.rawValue),
-    Character.init(name: "Ego", image: "img_villain_ego", descripcion: "Descripcion: Ego", power: 3, kind: KindSuperHeroe.villain.rawValue),
-    Character.init(name: "Hela", image: "img_villain_hela", descripcion: "Descripcion: Hela", power: 2, kind: KindSuperHeroe.villain.rawValue),
-    Character.init(name: "Ivan Vanko", image: "img_villain_ivan_vanko", descripcion: "Descripcion: Ivan Vanko", power: 4, kind: KindSuperHeroe.villain.rawValue),
-    Character.init(name: "Thanos", image: "img_villain_thanos", descripcion: "Descripcion: Thanos", power: 3, kind: KindSuperHeroe.villain.rawValue)]
     
+    var villains = Utilities.shared.getDataVillain()
     private var villainSelected: Character? = nil
     
     override func viewDidLoad() {
@@ -46,7 +41,7 @@ class VillainViewController: UIViewController {
         
         vc.title = villain.name
         vc.navigationItem.title = villain.name
-        
+        vc.delegate = self
         vc.setCharacter(character: villain)
         
     }
@@ -77,8 +72,15 @@ extension VillainViewController: UITableViewDelegate, UITableViewDataSource {
         }
     // Get tasks for current task state selected
         
+        let villain = villains[indexPath.row]
+        let character = Character.init(id: Int(villain.id),
+                                       name: villain.name ?? "",
+                                       image: villain.image,
+                                       descripcion: villain.descripcion,
+                                       power: Int(villain.power),
+                                       kind: "V")
         
-        cell.setCharacter(villains[indexPath.row])
+        cell.setCharacter(character)
         cell.delegate = self
         cell.selectCell = { [weak self] () -> Void in
             guard let self = self else {
@@ -100,5 +102,12 @@ extension VillainViewController: UITableViewDelegate, UITableViewDataSource {
 extension VillainViewController: SelectedCharacterDelegate {
     func selectedCharacter(character: Character) {
         self.villainSelected = character
+    }
+}
+
+extension VillainViewController: EditCharacterDelegate {
+    func onCharacterSaved(){
+        villains = Utilities.shared.getDataVillain()
+        tableView.reloadData()
     }
 }

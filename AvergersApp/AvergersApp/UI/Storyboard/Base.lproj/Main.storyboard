@@ -48,7 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZKw-A1-2ss"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SS0-oi-adU"/>
+                    <navigationItem key="navigationItem" title="SuperHeroes" id="SS0-oi-adU"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="tableView" destination="vsT-at-4av" id="IBu-TZ-xtc"/>
@@ -71,7 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="Z1F-i3-IsD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Battles" image="ic_tab_battles" id="guT-Vk-Pmy"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWe-we-Z9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +109,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ILl-7P-GQh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="b87-4T-5VF"/>
+                    <navigationItem key="navigationItem" title="Villanos" id="b87-4T-5VF"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="6AL-Ie-d5U" id="j3s-2B-djT"/>
@@ -160,7 +160,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OdP-KF-NEg"/>
+        <segue reference="Bto-PZ-aqY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ic_tab_battles" width="17" height="17"/>

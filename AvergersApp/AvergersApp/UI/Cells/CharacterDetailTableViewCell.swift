@@ -37,7 +37,7 @@ class CharacterDetailTableViewCell: UITableViewCell {
             return
         }
         
-        characterPowerImage.image = UIImage(named: Utilities.shared.getImageSuperPower(power: character.power ?? 0))
+        characterPowerImage.image = UIImage(named: Utilities.shared.getImageSuperPower(power: character.power))
         
         characterDescription.text = _character?.descripcion
     }

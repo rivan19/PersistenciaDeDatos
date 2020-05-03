@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CharacterDetailViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var _character : Character?
+    private var dataProvider = DataProvider()
+    var delegate: EditCharacterDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,26 @@ class CharacterDetailViewController: UIViewController {
     
     func setCharacter(character: Character){
         _character = character
+    }
+    
+    @IBAction func editPowerCharacterButton(_ sender: Any) {
+        self.performSegue(withIdentifier: Utilities.shared.segue_edit_Power, sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        guard let vc = segue.destination as? EditPowerCharacterViewController else {
+            return
+        }
+        
+        guard let character = _character else {
+            return
+        }
+        vc.delegate = self
+        vc.setCharacter(character: character)
+        
     }
     
 
@@ -56,7 +79,6 @@ extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSou
     return UITableViewCell()
     }
     // Get tasks for current task state selected
-        
         cell.setCharacterer(character: _character!)
         
         return cell
@@ -64,5 +86,39 @@ extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSou
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 500
+    }
+}
+
+extension CharacterDetailViewController: EditPowerViewDelegate {
+    
+    func onPowerSaved(entitie: KindEntity, id: Int, esSuperHeroe: Bool) {
+        
+        if esSuperHeroe {
+            guard let avenger = dataProvider.loadBy(entitie: entitie, id: id) as? [Avengers] else {
+                return
+            }
+            
+            guard let avg = avenger.first else {
+                return
+            }
+            
+            _character = Character(id: id, name: avg.name ?? "", image: avg.image, descripcion: avg.descripcion, power: Int(avg.power), kind: KindSuperHeroe.avenger.rawValue)
+            
+        } else {
+            guard let villain = dataProvider.loadBy(entitie: entitie, id: id) as? [Villains] else {
+                return
+            }
+            
+            guard let vil = villain.first else {
+                return
+            }
+            
+            
+            _character = Character(id: id, name: vil.name ?? "", image: vil.image, descripcion: vil.descripcion, power: Int(vil.power), kind: KindSuperHeroe.villain.rawValue)
+        }
+        
+        tableView.reloadData()
+        delegate?.onCharacterSaved()
+        
     }
 }

@@ -24,6 +24,11 @@
 		D5C7916C245C9A0E00C3ED6B /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */; };
 		D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */; };
 		D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7916F245C9B4D00C3ED6B /* Character.swift */; };
+		D5C79174245DEBCD00C3ED6B /* villains.json in Resources */ = {isa = PBXBuildFile; fileRef = D5C79172245DEBCD00C3ED6B /* villains.json */; };
+		D5C79175245DEBCD00C3ED6B /* avengers.json in Resources */ = {isa = PBXBuildFile; fileRef = D5C79173245DEBCD00C3ED6B /* avengers.json */; };
+		D5C79177245E08AD00C3ED6B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79176245E08AD00C3ED6B /* Database.swift */; };
+		D5C79179245E0E5900C3ED6B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79178245E0E5900C3ED6B /* DataProvider.swift */; };
+		D5C7917F245E3F9600C3ED6B /* EditPowerCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		D5C7916F245C9B4D00C3ED6B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D5C79172245DEBCD00C3ED6B /* villains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = villains.json; sourceTree = "<group>"; };
+		D5C79173245DEBCD00C3ED6B /* avengers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = avengers.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		D5C79176245E08AD00C3ED6B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		D5C79178245E0E5900C3ED6B /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPowerCharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D53C89BF245B6949000A31AD /* Local */,
+				D5C79178245E0E5900C3ED6B /* DataProvider.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -124,7 +135,9 @@
 		D53C89BF245B6949000A31AD /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				D5C79171245DE22600C3ED6B /* JSON */,
 				D53C89C0245B6952000A31AD /* Models */,
+				D5C79176245E08AD00C3ED6B /* Database.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 				D53C89C5245C6C30000A31AD /* VillainViewController.swift */,
 				D53C89C7245C6C43000A31AD /* BattleViewController.swift */,
 				D5C7916D245C9ACB00C3ED6B /* CharacterDetailViewController.swift */,
+				D5C7917E245E3F9600C3ED6B /* EditPowerCharacterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +200,15 @@
 				D5C7916B245C9A0E00C3ED6B /* CharacterDetail.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D5C79171245DE22600C3ED6B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D5C79173245DEBCD00C3ED6B /* avengers.json */,
+				D5C79172245DEBCD00C3ED6B /* villains.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +272,8 @@
 				D53C89B4245B679E000A31AD /* LaunchScreen.storyboard in Resources */,
 				D53C89B1245B679E000A31AD /* Assets.xcassets in Resources */,
 				D53C89AC245B6797000A31AD /* Main.storyboard in Resources */,
+				D5C79174245DEBCD00C3ED6B /* villains.json in Resources */,
+				D5C79175245DEBCD00C3ED6B /* avengers.json in Resources */,
 				D53C89CC245C6E43000A31AD /* CharacterTableViewCell.xib in Resources */,
 				D5C7916C245C9A0E00C3ED6B /* CharacterDetail.storyboard in Resources */,
 			);
@@ -261,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C7917F245E3F9600C3ED6B /* EditPowerCharacterViewController.swift in Sources */,
 				D53C89C8245C6C43000A31AD /* BattleViewController.swift in Sources */,
 				D53C89CB245C6E43000A31AD /* CharacterTableViewCell.swift in Sources */,
 				D53C89AF245B6797000A31AD /* AvergersApp.xcdatamodeld in Sources */,
@@ -271,7 +297,9 @@
 				D53C89A9245B6797000A31AD /* AvengersViewController.swift in Sources */,
 				D5C7916E245C9ACB00C3ED6B /* CharacterDetailViewController.swift in Sources */,
 				D5C79170245C9B4D00C3ED6B /* Character.swift in Sources */,
+				D5C79179245E0E5900C3ED6B /* DataProvider.swift in Sources */,
 				D53C89A5245B6797000A31AD /* AppDelegate.swift in Sources */,
+				D5C79177245E08AD00C3ED6B /* Database.swift in Sources */,
 				D53C89A7245B6797000A31AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

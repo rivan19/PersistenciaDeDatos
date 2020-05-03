@@ -1,0 +1,92 @@
+[
+    {
+        "id" : 1,
+        "name" : "Yon Rogg",
+        "image" : "img_heroe_yon_rogg",
+        "power" : 2,
+        "descripcion" : "Yon Rogg es un Kree del planeta Hala que se convirtió en coronel de la Armada Imperial Kree. Su misión fue proteger los intereses galácticos del Imperio Kree. ... La Inteligencia Suprema envía a Yon Rogg a la Tierra para investigar como los nativos vencieron a un centinela Kree.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 2,
+        "name" : "Dormammu",
+        "image" : "img_villain_dormammu",
+        "power" : 4,
+        "descripcion" : "Dormammu nació en una dimensión altamente violenta y con guerras constantes: se especializó en una forma de combate de esta dimensión, y como es una entidad hecha de pura energía mística posee grandes poderes mágicos (que sobrepasan los del demonio Mephisto y rivalizan con el poder cósmico de Eternity).",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 3,
+        "name" : "Ego",
+        "image" : "img_villain_ego",
+        "power" : 4,
+        "descripcion" : "Ego es excepcionalmente inteligente, aunque, como su nombre lo indica, alberga un complejo de superioridad extremo y puede ser emocional si se frustra.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 4,
+        "name" : "Hela",
+        "image" : "img_villain_hela",
+        "power" : 2,
+        "descripcion" : "Hela nació en Jotunheim, la tierra de los gigantes. Ella es la hija de Loki (aunque sea una encarnación diferente​ quien murió durante un Ragnarok anterior asgardiano) y la giganta Angrboða. Cuando maduró, Odín la nombró como la diosa de la muerte, dándole gobierno sobre los muertos en los reinos de Hel y Niffleheim.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 5,
+        "name" : "Ivan Vanko",
+        "image" : "img_villain_ivan_vanko",
+        "power" : 2,
+        "descripcion" : "Ivan Antonovich Vanko fue un físico ruso e hijo del ex científico de Industrias Stark, Anton Vanko. ... Tras ser derrotado por Stark y James Rhodes, Vanko activó la autodestrucción de armadura y murió para no regresar a prisión.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 6,
+        "name" : "Johann Schmidt",
+        "image" : "img_villain_johann_schmidt",
+        "power" : 3,
+        "descripcion" : "Biografía y Cronología. El Red Skull Johann Schmidt era un ex general oficial nazi y confidente de Adolf Hitler. Ha estado íntimamente afiliado con HYDRA y es enemigo de S.H.I.E.L.D., Los Vengadores, y otros intereses de los Estados Unidos y el mundo en general.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 7,
+        "name" : "Malekith",
+        "image" : "img_villain_malekith",
+        "power" : 2,
+        "descripcion" : "Malekith el Maldito es un supervillano del Universo Marvel. Es gobernante de los Elfos Oscuros de malekith super Svartalfheim, y ha entrado en conflicto con Thor. Una vez utilizó el Cofre de los Antiguos Inviernos.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 8,
+        "name" : "Ronan",
+        "image" : "img_villain_ronan",
+        "power" : 3,
+        "descripcion" : "Ronan es miembro de la raza alienígena Kree y miembro del Cuerpo de Acusadores, que son el equivalente Kree de los gobernadores militares y juristas. Su ascenso en las filas fue extraordinario, y eventualmente se convirtió en el tercer ser más poderoso del Imperio Kree.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 9,
+        "name" : "Thanos",
+        "image" : "img_villain_thanos",
+        "power" : 5,
+        "descripcion" : "Thanos es un Titán que nació en el planeta con el mismo nombre. Originalmente fue creado por Jim Starlin y Mike Friedrich como uno de los enemigos de Iron-Man en 1973. Sin embargo, poco a poco este personaje evolucionaría para convertirse en uno de los villanos más temidos de todo el universo.",
+        "kind" : "V"
+
+    },
+    {
+        "id" : 10,
+        "name" : "Ultron",
+        "image" : "img_villain_ultron",
+        "power" : 4,
+        "descripcion" : "La apariencia visual y los poderes de Ultron han variado, pero sus poderes comunes incluyen niveles sobrehumanos de fuerza, velocidad, resistencia, durabilidad y reflejos; vuelo a velocidades subsónicas; varias armas ofensivas como rayos concusivos de energía (encéfalo-rayo), disparados de sus manos y sus sensores ópticos, además de un 'rayo encefalopático', el cual sitúa a sus víctimas en un estado de coma semejante a la muerte.",
+        "kind" : "V"
+
+    }
+]

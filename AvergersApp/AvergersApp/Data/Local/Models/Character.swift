@@ -9,14 +9,15 @@
 import Foundation
 
 class Character : Codable {
+    let id: Int
     let name : String
     let image : String?
+    let power : Int
     let descripcion : String?
-    let power : Int?
     let kind: String
     
-    init (name: String, image: String?, descripcion: String?, power: Int?, kind: String) {
-        
+    init (id: Int, name: String, image: String?, descripcion: String?, power: Int?, kind: String) {
+        self.id = id
         self.name = name
         self.image = image ?? ""
         self.descripcion = descripcion ?? ""

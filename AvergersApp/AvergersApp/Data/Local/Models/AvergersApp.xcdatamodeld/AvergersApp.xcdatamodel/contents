@@ -2,25 +2,27 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Avengers" representedClassName="Avengers" syncable="YES" codeGenerationType="class">
         <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="power" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="Battle" representedClassName="Battle" syncable="YES" codeGenerationType="class">
-        <attribute name="idBatalla" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="Battles" representedClassName="Battles" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="win" optional="YES" attributeType="String"/>
         <relationship name="avenger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avengers"/>
-        <relationship name="villain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Villain"/>
+        <relationship name="villain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Villains"/>
     </entity>
-    <entity name="Villain" representedClassName="Villain" syncable="YES" codeGenerationType="class">
+    <entity name="Villains" representedClassName="Villains" syncable="YES" codeGenerationType="class">
         <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="power" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Avengers" positionX="-1.57421875" positionY="-382.8671875" width="128" height="103"/>
-        <element name="Battle" positionX="184.96875" positionY="-212.29296875" width="128" height="103"/>
-        <element name="Villain" positionX="350.5078125" positionY="-372.1640625" width="128" height="103"/>
+        <element name="Avengers" positionX="-1.57421875" positionY="-382.8671875" width="128" height="118"/>
+        <element name="Battles" positionX="184.96875" positionY="-212.29296875" width="128" height="103"/>
+        <element name="Villains" positionX="350.5078125" positionY="-372.1640625" width="128" height="118"/>
     </elements>
 </model>

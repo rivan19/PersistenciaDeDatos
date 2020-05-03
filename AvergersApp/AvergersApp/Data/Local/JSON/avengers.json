@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Capitan America",
+        "image": "img_heroe_america_captain",
+        "power": 3,
+        "descripcion": "Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de Steve. Horrorizado ante un noticiario que mostraba a los nazis en Europa, Rogers intentó alistarse en el ejército.",
+        "kind": "A"
+
+    },
+    {
+        "id": 2,
+        "name": "Black Panther",
+        "image": "img_heroe_black_panther",
+        "power": 3,
+        "descripcion": "Pantera Negra es el título ceremonial otorgado al jefe de la tribu Pantera de la avanzada nación africana de Wakanda. Además de gobernar el país, también es el jefe de sus diversas tribus (colectivamente denominadas Wakandas). El traje de Pantera es un símbolo de la oficina (jefe de estado) y se utiliza incluso durante misiones diplomáticas.",
+        "kind": "A"
+
+    },
+    {
+        "id": 3,
+        "name": "Black Widow",
+        "image": "img_heroe_black_widow",
+        "power": 2,
+        "descripcion": "Agente de inteligencia rusa, recluta de la KGB, un arma soviética de La Guerra Fría, leyenda de la academia de espías conocido como el Red-Room. Ahora convertida en heroína y agente libre de SHIELD, Natasha Romanova es la Black Widow, la espía más grande y peligrosa del mundo",
+        "kind": "A"
+
+    },
+    {
+        "id": 4,
+        "name": "Dr. Strange",
+        "image": "img_heroe_dr_strange",
+        "power": 4,
+        "descripcion": "Stephen Strange es un médico especializado en neurocirugía, codicioso y egocéntrico, que solo se preocupa por la riqueza de su carrera, hasta que en un accidente sufrió una enfermedad nerviosa en sus manos que le obligó a retirarse. Cuando su padre murió, su hermano fue a visitarlo para recriminarle que no fue al funeral ese día. Stephen estaba con una chica, por lo que su hermano salió enfadado. Estaba nevando esa noche y hubo un accidente en el cual su hermano murió al ser atropellado. Stephen hizo que su cadáver fuera criogenizado hasta el día en que la ciencia lo pudiera revivir.",
+        "kind": "A"
+
+    },
+    {
+        "id": 5,
+        "name": "Gamora",
+        "image": "img_heroe_gamora",
+        "power": 2,
+        "descripcion": "Gamora fue criada y entrenada por Thanos para asesinar a Magus, una malvada versión alterna de Adam Warlock. ... Gamora pronto dominó las artes marciales, ganándose el apodo de 'la mujer más letal en toda la galaxia'. Cuando ella era una adolescente, Thanos la llevó en un viaje.",
+        "kind": "A"
+
+    },
+    {
+        "id": 6,
+        "name": "Hulk",
+        "image": "img_heroe_hulk",
+        "power": 4,
+        "descripcion": "La historia de Hulk comienza cuando Bruce Banner está probando una de sus últimas invenciones, la bomba gamma.",
+        "kind": "A"
+
+    },
+    {
+        "id": 7,
+        "name": "Iron Man",
+        "image": "img_heroe_ironman",
+        "power": 3,
+        "descripcion": "Iron Man es uno de los grandes superhéroes de Marvel Comics. ... Fue uno de los héroes de Marvel que inició la revolución en el mundo de los cómics. Junto a Ant-Man (El Hombre Hormiga), El Poderoso Thor, La Avispa y El Increíble Hulk, fundó Los Vengadores, erigiéndose como un icono de Marvel.",
+        "kind": "A"
+
+    },
+    {
+        "id": 8,
+        "name": "Capitana Marvel",
+        "image": "img_heroe_marvel_captain",
+        "power": 5,
+        "descripcion": "La ex piloto y agente de inteligencia de la Fuerza Aérea, Carol Danvers, persiguió su sueño de explorar el espacio como empleada de la NASA, pero su vida cambió para siempre cuando se transformó accidentalmente en un híbrido humano-Kree con poderes extraordinarios.",
+        "kind": "A"
+
+    },
+    {
+        "id": 9,
+        "name": "Spiderman",
+        "image": "img_heroe_spiderman",
+        "power": 3,
+        "descripcion": "Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy # 15 (10 de agosto de 1962), en la Edad de Plata de los cómics.",
+        "kind": "A"
+
+    },
+    {
+        "id": 10,
+        "name": "Thor",
+        "image": "img_heroe_thor",
+        "power": 5,
+        "descripcion": "Thor es el hijo de Odín, señor de los dioses de Asgard, y de Jord, que también es conocida como Gea, la más anciana diosa de la Tierra. Odín quería ser padre de un hijo cuyo poder derivase de la Tierra y de Asgard, así que se apareó con Jord. Odín creó una cueva en Noruega donde Jord dio a luz a Thor.",
+        "kind": "A"
+
+    }    
+]
