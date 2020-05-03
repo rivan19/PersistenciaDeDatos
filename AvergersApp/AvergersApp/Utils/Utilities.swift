@@ -41,6 +41,7 @@ class Utilities {
     let segue_Avenger = "SEGUE_HEROES_DETAIL"
     let segue_Villain = "SEGUE_VILLAIN_DETAIL"
     let segue_edit_Power = "SEGUE_EDIT_POWER"
+    let segue_detail_battle = "SEGUE_SHOW_DETAIL_BATTLE"
     
     let key_user_default = "keyUserDefaultPersistence"
     let key_last_view = "keyUserDefaultView"
@@ -132,15 +133,29 @@ class Utilities {
         dataProvider.save()
     }
     
+    func getVillains() -> [Villains] {
+        guard let data = dataProvider.loadAllEntitie(entitie: .villain) as? [Villains] else
+        {
+            return []
+        }
+        return data
+    }
+    
     func getDataVillain() -> [Villains] {
         let values = getUserDefault(key: key_user_default)
         if values != "S" {
             saveDataModel()
         }
-        guard let data = dataProvider.loadAllTask(entitie: .villain) as? [Villains] else
+        
+        return getVillains()
+    }
+    
+    func getAvengers() -> [Avengers] {
+        guard let data = dataProvider.loadAllEntitie(entitie: .avenger) as? [Avengers] else
         {
             return []
         }
+        
         return data
     }
     
@@ -150,8 +165,11 @@ class Utilities {
             saveDataModel()
         }
         
-        guard let data = dataProvider.loadAllTask(entitie: .avenger) as? [Avengers] else
-        {
+        return getAvengers()
+    }
+    
+    func getBattles() -> [Battles] {
+        guard let data = dataProvider.loadAllEntitie(entitie: .battle) as? [Battles] else {
             return []
         }
         

@@ -9,7 +9,16 @@
 import UIKit
 
 class BattleViewController: UIViewController {
-
+    
+    let dataProvider = DataProvider()
+    
+    lazy var battles: [Battles] = {
+        guard let battle = dataProvider.loadAllEntitie(entitie: .battle) as? [Battles] else {
+            return []
+        }
+        return battle
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +36,27 @@ class BattleViewController: UIViewController {
     }
     */
 
+}
+
+extension BattleViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    // Get task count for current task state selected
+        return battles.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    // Get custom cell view
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BattleTableViewCell.cellIdentifier,
+    for: indexPath) as? BattleTableViewCell else {
+    return UITableViewCell()
+    }
+    // Get tasks for current task state selected
+
+        cell.setBattle(battles: battles[indexPath.row])
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 500
+    }
 }

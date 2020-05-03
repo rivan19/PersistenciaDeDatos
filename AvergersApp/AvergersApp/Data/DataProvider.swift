@@ -48,7 +48,7 @@ class DataProvider {
         database?.delete(data: [battle])
     }
     
-    func loadAllTask(entitie: KindEntity) -> [Any] {
+    func loadAllEntitie(entitie: KindEntity) -> [Any] {
         
         guard let data = database?.fecthAllData(entitie: entitie) else {
             return []

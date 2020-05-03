@@ -13,7 +13,10 @@ class VillainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    var villains = Utilities.shared.getDataVillain()
+    lazy var villains: [Villains] = {
+        return Utilities.shared.getDataVillain()
+    }()
+    
     private var villainSelected: Character? = nil
     
     override func viewDidLoad() {

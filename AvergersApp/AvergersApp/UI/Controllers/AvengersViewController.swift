@@ -12,7 +12,10 @@ class AvengersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var avengers = Utilities.shared.getDataAvengers()
+    lazy var avengers : [Avengers] = {
+      return Utilities.shared.getDataAvengers()
+    }()
+    
     private var avengerSelected : Character? = nil
     
     //private var _character : Character

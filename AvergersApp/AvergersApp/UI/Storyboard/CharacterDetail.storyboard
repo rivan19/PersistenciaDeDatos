@@ -252,7 +252,7 @@
                                             <action selector="pushStar:" destination="u0u-CX-aoQ" eventType="touchUpInside" id="onl-1e-k0b"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-Mj-9GM">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-Mj-9GM">
                                         <rect key="frame" x="203" y="36" width="33" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="33" id="AOs-eL-6gI"/>
@@ -306,7 +306,7 @@
                                     <constraint firstItem="CLa-zJ-sHg" firstAttribute="top" secondItem="77J-MY-OCJ" secondAttribute="bottom" constant="8" id="D4v-Qn-cTo"/>
                                     <constraint firstAttribute="width" constant="271" id="ac2-Iq-p9u"/>
                                     <constraint firstAttribute="bottom" secondItem="7i0-wZ-b2b" secondAttribute="bottom" constant="33" id="chg-P1-ceS"/>
-                                    <constraint firstItem="ehJ-Mj-9GM" firstAttribute="top" secondItem="77J-MY-OCJ" secondAttribute="bottom" constant="8" id="eT3-1R-vhK"/>
+                                    <constraint firstItem="ehJ-Mj-9GM" firstAttribute="top" secondItem="77J-MY-OCJ" secondAttribute="bottom" constant="7" id="eT3-1R-vhK"/>
                                     <constraint firstItem="77J-MY-OCJ" firstAttribute="leading" secondItem="24j-pK-wOQ" secondAttribute="leading" constant="8" id="hZ3-wS-FLa"/>
                                     <constraint firstItem="CLa-zJ-sHg" firstAttribute="leading" secondItem="Zh7-zm-URs" secondAttribute="trailing" constant="8" id="l0W-Yk-8MC"/>
                                     <constraint firstItem="Zh7-zm-URs" firstAttribute="leading" secondItem="z7l-qW-GIU" secondAttribute="trailing" constant="8" id="mil-NI-reZ"/>

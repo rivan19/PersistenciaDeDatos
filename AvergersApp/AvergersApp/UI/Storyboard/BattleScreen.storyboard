@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9AD-Tc-7gP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nueva Batalla-->
+        <scene sceneID="Qk4-xR-tIM">
+            <objects>
+                <viewController title="Nueva Batalla" modalPresentationStyle="currentContext" id="9AD-Tc-7gP" customClass="BattleAddViewController" customModule="AvergersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVe-8L-p8n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_heroe_marvel_captain" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-jE-gwK">
+                                <rect key="frame" x="87" y="257" width="240" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7Uf-3V-cyw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_battle_round" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-ry-ueO">
+                                <rect key="frame" x="87" y="395" width="240" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="86a-mi-baO"/>
+                                    <constraint firstAttribute="width" constant="240" id="Wd3-w5-DZg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_heroe_yon_rogg" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-Jh-Ozf">
+                                <rect key="frame" x="87" y="495" width="240" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ruM-b0-6Y3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batalla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdn-ZE-4zG">
+                                <rect key="frame" x="20" y="117" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TVQ-Uw-f4c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frU-E7-nwB">
+                                <rect key="frame" x="187" y="307.5" width="40" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="QUS-0h-WtM"/>
+                                    <constraint firstAttribute="height" constant="37" id="VyA-yf-AOd"/>
+                                </constraints>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBattleAvengerButton:" destination="9AD-Tc-7gP" eventType="touchUpInside" id="abq-sW-bRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0te-Mb-c8w">
+                                <rect key="frame" x="187" y="545.5" width="40" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="WOD-hg-WKu"/>
+                                    <constraint firstAttribute="width" constant="40" id="ZoZ-OT-XyP"/>
+                                </constraints>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBattleVillainButton:" destination="9AD-Tc-7gP" eventType="touchUpInside" id="slz-ig-hmC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ol-Dm-aVA">
+                                <rect key="frame" x="87" y="714" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Fight"/>
+                                <connections>
+                                    <action selector="addBattleFightButton:" destination="9AD-Tc-7gP" eventType="touchUpInside" id="yIF-0l-LNw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-dk-Rpl">
+                                <rect key="frame" x="365" y="88" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="cr7-E9-led"/>
+                                    <constraint firstAttribute="width" constant="29" id="itl-dv-Xay"/>
+                                </constraints>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBattleCloseWindowButton:" destination="9AD-Tc-7gP" eventType="touchUpInside" id="dHC-CN-mBS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.075805313885211945" green="0.81287401914596558" blue="0.51373517513275146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fdn-ZE-4zG" firstAttribute="top" secondItem="X03-f8-aLN" secondAttribute="top" constant="29" id="0Dw-QC-oef"/>
+                            <constraint firstItem="frU-E7-nwB" firstAttribute="centerX" secondItem="zQj-jE-gwK" secondAttribute="centerX" id="1B6-dx-c7V"/>
+                            <constraint firstItem="Fdn-ZE-4zG" firstAttribute="leading" secondItem="X03-f8-aLN" secondAttribute="leading" constant="20" id="4FG-o5-BCC"/>
+                            <constraint firstItem="0te-Mb-c8w" firstAttribute="centerX" secondItem="dAe-Jh-Ozf" secondAttribute="centerX" id="B1a-5t-HL4"/>
+                            <constraint firstItem="dAe-Jh-Ozf" firstAttribute="leading" secondItem="X03-f8-aLN" secondAttribute="leading" constant="87" id="BAn-NV-its"/>
+                            <constraint firstItem="X03-f8-aLN" firstAttribute="trailing" secondItem="Fdn-ZE-4zG" secondAttribute="trailing" constant="20" id="Fqq-ke-phv"/>
+                            <constraint firstItem="0te-Mb-c8w" firstAttribute="centerY" secondItem="dAe-Jh-Ozf" secondAttribute="centerY" id="G0H-ds-nYi"/>
+                            <constraint firstItem="2kK-ry-ueO" firstAttribute="top" secondItem="zQj-jE-gwK" secondAttribute="bottom" id="H0k-Ls-EZv"/>
+                            <constraint firstItem="2kK-ry-ueO" firstAttribute="leading" secondItem="zQj-jE-gwK" secondAttribute="leading" id="IqG-jX-Ngr"/>
+                            <constraint firstItem="X03-f8-aLN" firstAttribute="trailing" secondItem="Cs2-dk-Rpl" secondAttribute="trailing" constant="20" id="KFH-Mp-BgH"/>
+                            <constraint firstItem="dAe-Jh-Ozf" firstAttribute="top" secondItem="2kK-ry-ueO" secondAttribute="bottom" id="La6-LD-UIc"/>
+                            <constraint firstItem="X03-f8-aLN" firstAttribute="trailing" secondItem="zQj-jE-gwK" secondAttribute="trailing" constant="87" id="MU7-N8-TzL"/>
+                            <constraint firstItem="frU-E7-nwB" firstAttribute="centerY" secondItem="zQj-jE-gwK" secondAttribute="centerY" id="PsH-zz-CAU"/>
+                            <constraint firstItem="Cs2-dk-Rpl" firstAttribute="top" secondItem="X03-f8-aLN" secondAttribute="top" id="RnF-Wa-OEt"/>
+                            <constraint firstItem="zQj-jE-gwK" firstAttribute="top" secondItem="Fdn-ZE-4zG" secondAttribute="bottom" constant="119" id="YAD-gp-RAI"/>
+                            <constraint firstItem="X03-f8-aLN" firstAttribute="trailing" secondItem="dAe-Jh-Ozf" secondAttribute="trailing" constant="87" id="aH7-Rx-TxX"/>
+                            <constraint firstItem="dAe-Jh-Ozf" firstAttribute="top" secondItem="2kK-ry-ueO" secondAttribute="bottom" id="p11-Sc-AdS"/>
+                            <constraint firstItem="zQj-jE-gwK" firstAttribute="leading" secondItem="X03-f8-aLN" secondAttribute="leading" constant="87" id="txk-Bm-bfz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X03-f8-aLN"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="addBattleAvenger" destination="frU-E7-nwB" id="NNu-43-HtH"/>
+                        <outlet property="addBattleAvengerImage" destination="zQj-jE-gwK" id="mBd-Ic-8Cr"/>
+                        <outlet property="addBattleLabel" destination="Fdn-ZE-4zG" id="ERB-T2-yxr"/>
+                        <outlet property="addBattleVillain" destination="0te-Mb-c8w" id="ZOW-0l-81S"/>
+                        <outlet property="addBattleVillainImage" destination="dAe-Jh-Ozf" id="rjj-5A-YyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRY-mj-3ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37.681159420289859" y="-52.232142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_battle_round" width="512" height="512"/>
+        <image name="img_heroe_marvel_captain" width="223.33332824707031" height="138"/>
+        <image name="img_heroe_yon_rogg" width="223.33332824707031" height="138"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
